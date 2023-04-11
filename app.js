@@ -32,6 +32,7 @@ function addTodo(todo) {
   if (todo) {
     todoText = todo.text;
   }
+
   const todoEl = document.createElement("li");
   todoEl.innerText = todoText;
   todoEl.addEventListener("contextmenu", (e) => {
