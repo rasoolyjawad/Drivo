@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  line-height: 1.4;
+  background-color: #fffcf4;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+}
+form {
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #7ed9578a;
+  max-width: 400px;
+}
+input {
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 2rem;
+  color: #444;
+  display: block;
+  width: 100%;
+  outline-color: #f49519cb;
+}
+#todo {
+  font-size: 1.1rem;
+}
+#todo li {
+  padding: 2rem 1rem;
+  border-top: 1px #fffcf4 solid;
+  list-style: number;
+  list-style-position: inside;
+}
+.bold {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: center;
+  color: #a8a8a8;
+}
+/* Media 
+ */
+@media only screen and (max-width: 786px) {
+  body {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    line-height: 1.4;
+    background-color: #fffcf4;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .logo {
+    max-width: 300px;
+  }
+  form {
+    width: 280px;
+    border-radius: 1rem;
+  }
+  input {
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    border-bottom: #f49519cb 0.5rem solid;
+  }
+
+  #todo {
+    font-size: 1rem;
+  }
+  #todo li {
+    padding: 1rem 0.5rem;
+    border-top: 1px #fffcf4 solid;
+    list-style: number;
+    list-style-position: inside;
+  }
+  .bold {
+    font-weight: bold;
+  }
+}
